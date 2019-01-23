@@ -22,6 +22,7 @@
          <li><a href="servises.php">Services</a></li>
          <li><a href="register.php">Register</a></li>
             <li><a href="Login.php">Login</a></li>
+          <li><a href="Admin%20Panel\admin_login.php">Admin Login</a></li>
             <li><a href="contact.php">Contact Us</a></li>
       <li ><a href="meterial.php">Material</a></li>
             <li ><a href="Q&A.php">Q&A</a></li>

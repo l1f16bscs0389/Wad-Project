@@ -23,7 +23,7 @@ $content = '
             <source src="media/Complete User Registration system using PHP and MySQL database.mp4" type="video/mp4">
         </video>
         <br>
-        <p>Compleate Rgistration System using PHP & MySQL database</p>
+        <p>Complete Registration System using PHP & MySQL database</p>
     </div>
     <div>
         <video width="320" controls>
