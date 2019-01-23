@@ -28,8 +28,15 @@ if(!isset($_SESSION['user_email'])){
         </div>
         <nav>
             <ul>
-
+                <li><a href="..\index.php">Home</a></li>
+                <li><a href="..\about.php">About</a></li>
+                <li><a href="..\servises.php">Services</a></li>
+                <li><a href="..\register.php">Register</a></li>
+                <li><a href="..\Login.php">Login</a></li>
                 <li class="current"><a href="admin_panel.php">Admin Panel</a></li>
+                <li><a href="..\contact.php">Contact Us</a></li>
+                <li><a href="..\Q&A.php">Q&A</a></li>
+
 
             </ul>
         </nav>
