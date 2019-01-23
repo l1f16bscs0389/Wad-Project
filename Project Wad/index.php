@@ -74,7 +74,7 @@ $content = '
 
 
 <footer>
-  <p>Copy Rights 2018-2019</p>
+  <p>Copy Rights 2018-2019 </p>
 </footer>
 
 ';
