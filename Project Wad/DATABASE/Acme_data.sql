@@ -78,15 +78,15 @@ INSERT INTO `Services` (`serv_id`, `serv_title`) VALUES
 (4, 'JAVASCRIPT');
 
 
-
+ALTER TABLE `admins`
+  ADD PRIMARY KEY (`user_id`);
 ALTER TABLE `videos`
   ADD PRIMARY KEY (`vid_id`);
 ALTER TABLE `Services`
   ADD PRIMARY KEY (`serv_id`);
 ALTER TABLE `admins`
   MODIFY `user_id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
-ALTER TABLE `admins`
-  ADD PRIMARY KEY (`user_id`);
+
 ALTER TABLE `videos`
   MODIFY `vid_id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 
