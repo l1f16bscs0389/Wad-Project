@@ -2,7 +2,7 @@
 session_start();
 require_once "sql_connection.php";
 if(!isset($_SESSION['user_email'])){
-    header('location: login.php?not_admin=You are not Admin!');
+    header('location: admin_login.php?not_admin=You are not Admin!');
 }
 ?>
 
@@ -57,6 +57,11 @@ if(!isset($_SESSION['user_email'])){
                 </a>
             </li>
             <li>
+                <a href="insert_videos.php?login">
+                    <i class="fas fa-plus"></i> Insert Videos
+                </a>
+            </li>
+            <li>
                 <a href="admin_logout.php">
                     <i class="fa fa-sign-out-alt"></i> <br>Admin logout</a>
             </li>
@@ -75,8 +80,12 @@ if(!isset($_SESSION['user_email'])){
         <div class="container">
             <div class="dark">
             <h2 class="text-center text-primary"><?php echo @$_GET['logged_in']?></h2>
-            <?php
-            if(isset($_GET['admin_logout'])){
+                <?php
+
+                if(isset($_GET['insert_videos'])){
+                    include ('insert_videos.php');
+                }
+            else if(isset($_GET['admin_logout'])){
                 include ('admin_logout.php');
             }
 
