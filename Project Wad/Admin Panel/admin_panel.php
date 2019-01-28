@@ -57,11 +57,16 @@ if(!isset($_SESSION['user_email'])){
                 </a>
             </li>
             <li>
-                <a href="insert_videos.php?login">
+                <a href="admin_panel.php?insert_videos">
                     <i class="fas fa-plus"></i> Insert Videos
                 </a>
             </li>
             <li>
+            <li>
+                <a href="admin_panel.php?view_videos">
+                    <i class="fas fa-plus"></i> View Videos
+                </a>
+            </li>
                 <a href="admin_logout.php">
                     <i class="fa fa-sign-out-alt"></i> <br>Admin logout</a>
             </li>
@@ -85,9 +90,12 @@ if(!isset($_SESSION['user_email'])){
                 if(isset($_GET['insert_videos'])){
                     include ('insert_videos.php');
                 }
-            else if(isset($_GET['admin_logout'])){
-                include ('admin_logout.php');
-            }
+                else if(isset($_GET['view_videos'])){
+                    include ('view_videos.php');
+                }
+                else if(isset($_GET['delete_view'])){
+                    include ('delete_view.php');
+                }
 
             ?>
         </div>

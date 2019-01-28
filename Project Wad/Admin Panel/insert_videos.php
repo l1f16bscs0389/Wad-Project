@@ -1,5 +1,4 @@
 <?php
-session_start();
 include ('sql_connection.php');
 if(!isset($_SESSION['user_email'])){
     header('location: admin_login.php?not_admin=You are not Admin!');

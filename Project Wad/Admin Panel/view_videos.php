@@ -1,5 +1,4 @@
 <?php
-session_start();
 include ('sql_connection.php');
 if(!isset($_SESSION['user_email'])){
 header('location: admin_login.php?not_admin=You are not Admin!');
@@ -37,7 +36,14 @@ header('location: admin_login.php?not_admin=You are not Admin!');
                         <th scope="row"><?php echo ++$i; ?></th>
                         <td><?php echo $vid_title; ?></td>
                         <td><video width='480' height='480' controls> <source src='../media/<?php echo $vid;?>'  type='video/mp4'></video></td>
-
+                        <td><?php echo $vid_cat ?>/-</td>
+                        <td><a href="admin_panel.php?edit_view=<?php echo $vid_id?>" class="btn btn-primary">
+                                <i class="fa fa-edit"></i> Edit
+                            </a>
+                            <a href="admin_panel.php?delete_view=<?php echo $vid_id?>" class="btn btn-danger">
+                                <i class="fa fa-trash-alt"></i> Delete
+                            </a>
+                        </td>
                     </tr>
                     <?php
                 }
