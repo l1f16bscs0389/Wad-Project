@@ -97,7 +97,7 @@ if(isset($_POST['insert_videos'])){
     </div>
 </form>
 <?php
-if(isset($_POST['insert_vid']))
+if(isset($_POST['insert_videos']))
 {
 echo"<br />".$vid."has been uploaded";
 }
