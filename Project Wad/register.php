@@ -14,8 +14,8 @@ $content = '
                 <input type="checkbox" name="Gender" value="Female" checked> Female<br>
                 <input type="checkbox" name="gender" value="other"> Other<br>
                 <p>Birthday: </p><i class="fas fa-birthday-cake"></i> <input type="date" name="birthday">
-                <p>Enter Password </p><i class="fas fa-lock mt-1"></i> <input type="password" placeholder="Enter Password"><br>
-                <p>Enter Confirm Password </p><i class="fas fa-lock mt-1"></i> <input type="password" placeholder="Enter Password">
+                <p>Enter Password </p><i class="fas fa-lock mt-1"></i> <input type="password" placeholder="Enter Password"requried pattern="^[a-zA-Z0-9]{8}$"><br>
+                <p>Enter Confirm Password </p><i class="fas fa-lock mt-1"></i> <input type="password" placeholder="Enter Password"requried pattern="^[a-zA-Z0-9]{8}$">
                 <p><br></p>
                 <button type="register" class="button_2">Register</button>
                </form>
