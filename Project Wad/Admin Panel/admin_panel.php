@@ -13,7 +13,7 @@ if(!isset($_SESSION['user_email'])){
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Afordable and profectional web design">
     <meta name="keywords" content="web design, afforadable web design,profectional web design">
-    <meta name="author" content="M.Asjad Farooq,Ahmed Younas,Anam Shafiq,Iqra Kafayat">
+    <meta name="author" content="M.Asjad Farooq,Ahmed Younas,Anam Shafiq,Iqra Kafayat,wahabjamshaid,M.khyzernaeem">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <title>Acme Web Design | Admin Panel </title>
     <link rel="stylesheet" href="..\css\style.css">
