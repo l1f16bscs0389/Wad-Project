@@ -93,6 +93,9 @@ if(!isset($_SESSION['user_email'])){
                 else if(isset($_GET['view_videos'])){
                     include ('view_videos.php');
                 }
+                else if(isset($_GET['update_videos'])){
+                    include ('Update_video.php');
+                }
                 else if(isset($_GET['delete_view'])){
                     include ('delete_view.php');
                 }
