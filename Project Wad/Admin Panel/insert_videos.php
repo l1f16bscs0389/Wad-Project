@@ -9,20 +9,17 @@ if(isset($_POST['insert_videos'])){
     $vid_title = $_POST['vid_title'];
     $vid_cat = $_POST['vid_cat'];
     $vid_desc = $_POST['vid_desc'];
-    $vid = $_POST['vid'];
+    //$vid = $_POST['vid'];
 
     //getting image from the field
     $vid = $_FILES['vid']['name'];
     $vid_tmp = $_FILES['vid']['tmp_name'];
-    move_uploaded_file($vid_tmp,"videos/".$vid);
+    move_uploaded_file($vid_tmp,"../media/".$vid);
 
     $insert_videos = "insert into `videos` (vid_cat, vid_title,vid_desc,vid) 
                   VALUES ('$vid_cat','$vid_title','$vid_desc','$vid');";
     $insert_vid = mysqli_query($con, $insert_videos);
 
-    if($insert_vid){
-        header("location: ".$_SERVER['PHP_SELF']);
-    }
 }
 ?>
 <h1 class="text-center my-4"><i class="fas fa-plus fa-md"></i> <span class="d-none d-sm-inline"> Add New </span> Videos </h1>
@@ -64,7 +61,7 @@ if(isset($_POST['insert_videos'])){
     </div>
     <div class="row my-3">
         <div class="d-none d-sm-block col-sm-3 col-md-4 col-lg-2 col-xl-2 mt-auto">
-            <label for="vid" class="float-md-right"><span class="d-sm-none d-md-inline"> ADD </span> Videos:</label>
+            <label for="vid1" class="float-md-right"><span class="d-sm-none d-md-inline"> ADD </span> Videos:</label>
         </div>
         <div class="col-sm-9 col-md-8 col-lg-4 col-xl-4 mt-3 mt-lg-0">
             <div class="input-group">

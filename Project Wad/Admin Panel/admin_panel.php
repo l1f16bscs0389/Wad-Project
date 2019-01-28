@@ -84,7 +84,7 @@ if(!isset($_SESSION['user_email'])){
         </nav>
         <div class="container">
             <div class="dark">
-            <h2 class="text-center text-primary"><?php echo @$_GET['logged_in']?></h2>
+            <h2 class="text-center text-primary"><?php echo @$_GET['logged_in']?> </h2>
                 <?php
 
                 if(isset($_GET['insert_videos'])){
