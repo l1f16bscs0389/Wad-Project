@@ -37,12 +37,6 @@ CREATE TABLE `videos` (
   ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
-
-INSERT INTO `videos` (`vid_id`, `vid_cat`, `vid_title`,`vid_desc`,`vid`) VALUES
-(1,2,'HTML-5','What is HTML 5','What is HTML5-.MP4');
-
-
-
 --
 -- Table structure for table `admins`
 --
@@ -88,7 +82,7 @@ ALTER TABLE `admins`
   MODIFY `user_id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 ALTER TABLE `videos`
-  MODIFY `vid_id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
+  MODIFY `vid_id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1;
 
 ALTER TABLE `Services`
   MODIFY `serv_id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;

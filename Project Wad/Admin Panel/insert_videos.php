@@ -1,5 +1,7 @@
 <?php
-if(isset($_SESSION['user_email'])){
+session_start();
+include ('sql_connection.php');
+if(!isset($_SESSION['user_email'])){
     header('location: admin_login.php?not_admin=You are not Admin!');
 }
 
@@ -13,11 +15,12 @@ if(isset($_POST['insert_videos'])){
     //getting image from the field
     $vid = $_FILES['vid']['name'];
     $vid_tmp = $_FILES['vid']['tmp_name'];
-    move_uploaded_file($vid_tmp,"videos/$vid");
+    move_uploaded_file($vid_tmp,"videos/".$vid);
 
-    $insert_videos = "insert into videos (vid_cat, vid_title,vid_desc,vid) 
+    $insert_videos = "insert into `videos` (vid_cat, vid_title,vid_desc,vid) 
                   VALUES ('$vid_cat','$vid_title','$vid_desc','$vid');";
     $insert_vid = mysqli_query($con, $insert_videos);
+
     if($insert_vid){
         header("location: ".$_SERVER['PHP_SELF']);
     }
@@ -89,8 +92,14 @@ if(isset($_POST['insert_videos'])){
     <div class="row my-3">
         <div class="d-none d-sm-block col-sm-3 col-md-4 col-lg-2 col-xl-2 mt-auto"></div>
         <div class="col-sm-9 col-md-8 col-lg-4 col-xl-4">
-            <button type="submit" name="insert_vid" class="btn btn-primary btn-block"><i class="fas fa-plus"></i> Insert video Now </button>
+            <button type="submit" name="insert_videos" class="btn btn-primary btn-block"><i class="fas fa-plus"></i> Insert video Now </button>
         </div>
     </div>
 </form>
+<?php
+if(isset($_POST['insert_vid']))
+{
+echo"<br />".$vid."has been uploaded";
+}
 
+?>
