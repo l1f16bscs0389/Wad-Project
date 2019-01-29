@@ -5,6 +5,10 @@ if(!isset($_SESSION['user_email'])){
     header('location: admin_login.php?not_admin=You are not Admin!');
 }
 ?>
+<?php
+$day=60*60*24*10+time();
+setcookie('admin_visit',date('d/m/y'),$day);
+?>
 
 <!DOCTYPE html>
 <html>
@@ -122,3 +126,12 @@ if(!isset($_SESSION['user_email'])){
 </body>
 
 </html>
+<?php
+
+if(isset($_COOKIE['admin_visit']))
+{
+    $last_visit=$_COOKIE['admin_visit'];
+    echo"<center><font color=>Dear admin you last visit this panel on :<b>$last_visit";
+}
+
+?>
