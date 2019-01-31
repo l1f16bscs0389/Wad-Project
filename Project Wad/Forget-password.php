@@ -13,12 +13,12 @@ $content = '
                 <i class="fas fa-user-circle mt-1"></i> <input type="email" placeholder="Enter Email... ">
 
                 <p>Password:</p>
-                <i class="fas fa-lock mt-1"></i> <input type="Password" placeholder="Enter Password... "requried pattern="^[a-zA-Z0-9]{8}$" >
+                <i class="fas fa-lock mt-1"></i> <input type="Password" placeholder="Enter Password... " required pattern="^[a-zA-Z0-9]{8}$" >
                 <!--regex exaclty 8 characters-->
                
 
                 <p>Confirm Password:</p>
-                <i class="fas fa-lock mt-1"></i> <input type="Password" placeholder="Enter Password Again ... "requried pattern="^[a-zA-Z0-9]{8}$">
+                <i class="fas fa-lock mt-1"></i> <input type="Password" placeholder="Enter Password Again ... " required pattern="^[a-zA-Z0-9]{8}$">
 
                 <p><br></p>
 

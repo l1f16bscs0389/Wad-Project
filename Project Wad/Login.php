@@ -14,7 +14,7 @@ $content = '
             <i class="fas fa-user-circle mt-1"></i> <input type="text" placeholder="Enter Email... ">
 
                 <p>Password:</p>
-              <i class="fas fa-lock mt-1"></i>  <input type="Password" placeholder="Enter Password... "requried pattern="^[a-zA-Z0-9]{8}$">
+              <i class="fas fa-lock mt-1"></i>  <input type="Password" placeholder="Enter Password... " required pattern="^[a-zA-Z0-9]{8}$">
 
             <header>
             <nav>
